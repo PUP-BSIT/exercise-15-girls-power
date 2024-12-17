@@ -37,5 +37,4 @@ def main_menu():
         else:
             print("\nInvalid option. Please try again.\n")
 
-
 main_menu()
