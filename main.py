@@ -1,3 +1,7 @@
+from girls_power.gomez import Gomez
+
+ashley = Gomez()
+
 def main_menu():
     while True:
         print("============== Main Menu ==============")
@@ -24,9 +28,8 @@ def main_menu():
             # TODO(esparagoza_mikka):
 
         elif choice == '4':
-            print("-----")
-            # TODO(gomez_ashley):
-
+            ashley.menu()
+           
         elif choice == '5':
             print("-----")
             # TODO(mosenos_loise):
