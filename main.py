@@ -1,6 +1,8 @@
 from girls_power.gomez import Gomez
+from girls_power.mosenos import Mosenos
 
 ashley = Gomez()
+mosenos = Mosenos(title={}, author={}, genre={})
 
 def main_menu():
     while True:
@@ -31,9 +33,7 @@ def main_menu():
             ashley.menu()
            
         elif choice == '5':
-            print("-----")
-            # TODO(mosenos_loise):
-
+            mosenos.menu()
         elif choice == '6':
             print("\nExiting program.\n")  
             break
