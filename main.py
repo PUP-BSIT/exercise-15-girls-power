@@ -4,7 +4,6 @@ from girls_power.esparagoza import Esparagoza
 from girls_power import alejandro
 from girls_power.deleon import Deleon
 
-
 ashley = Gomez()
 mosenos = Mosenos(title={}, author={}, genre={})
 esparagoza = Esparagoza()
@@ -27,7 +26,7 @@ def main_menu():
             alejandro.start_calculator()
 
         elif choice == '2':
-            deleon.menu()
+            deleon.display_menu()
             
         elif choice == '3':
             esparagoza.start_menu()

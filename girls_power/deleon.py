@@ -50,7 +50,7 @@ class Deleon:
     def clear_screen(self):
         os.system('cls' if os.name == 'nt' else 'clear')
 
-    def menu(self):
+    def display_menu(self):
         while True:
             print(f"\n--- {self.player_name}'s Stats Menu ---")
             print("1. Add Win")
@@ -86,7 +86,6 @@ class Deleon:
                     break
             else:
                 print("Invalid choice.")
-
 
 if __name__ == "__main__":
     tracker = Deleon(player_name="Jasmine")
