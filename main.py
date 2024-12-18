@@ -33,7 +33,6 @@ def main_menu():
             ashley.menu()
            
         elif choice == '5':
-            print("-----")
             mosenos.menu()
         elif choice == '6':
             print("\nExiting program.\n")  
