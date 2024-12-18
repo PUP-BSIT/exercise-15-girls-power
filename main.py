@@ -1,6 +1,7 @@
 from girls_power.gomez import Gomez
 from girls_power.mosenos import Mosenos
 from girls_power.esparagoza import Esparagoza
+from girls_power import alejandro
 
 ashley = Gomez()
 mosenos = Mosenos(title={}, author={}, genre={})
@@ -20,8 +21,7 @@ def main_menu():
         choice = input("Choose an option: ")
         
         if choice == '1':
-            print("-----")
-            # TODO(alejanddro_aleck):
+            alejandro.start_calculator()
 
         elif choice == '2':
             print("-----")
