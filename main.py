@@ -34,7 +34,7 @@ def main_menu():
             ashley.start_menu()
            
         elif choice == '5':
-            mosenos.menu()
+            mosenos.start_menu()
             
         elif choice == '6':
             print("\nExiting program.\n")  
