@@ -2,10 +2,12 @@ from girls_power.gomez import Gomez
 from girls_power.mosenos import Mosenos
 from girls_power.esparagoza import Esparagoza
 from girls_power import alejandro
+from girls_power.deleon import Deleon
 
 ashley = Gomez()
 mosenos = Mosenos(title={}, author={}, genre={})
 esparagoza = Esparagoza()
+deleon = Deleon()
 
 def main_menu():
     while True:
@@ -24,8 +26,7 @@ def main_menu():
             alejandro.start_calculator()
 
         elif choice == '2':
-            print("-----")
-            # TODO(de_leon_jasmine):
+            deleon.display_menu()
             
         elif choice == '3':
             esparagoza.start_menu()
