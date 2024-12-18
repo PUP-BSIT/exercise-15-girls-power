@@ -1,11 +1,13 @@
 class Gomez:
-    def __init__(self):
+    def __init__(self, name, age, course):
         self.name = "Ashley Hermione"
         self.age = 19
         self.course = "DIT"
+        self.hobby = "Digital Art and Programming"
+        self.favorite_food = "Fries"
 
     def greet(self):
-        print("Hello! I'm Ashley Hermione.")
+        print(f"Hello! I'm {self.name}.")
 
     def display_age(self):
         print(f"My age is {self.age}.")
@@ -13,13 +15,13 @@ class Gomez:
     def display_course(self):
         print(f"My course is {self.course}.")
 
-    def hobby(self):
-        print("I love Digital Art and Programming!")
+    def share_hobby(self):
+        print(f"I love {self.hobby}!")
 
-    def favorite_food(self):
-        print("My favorite food is fries.")
+    def share_favorite_food(self):
+        print(f"My favorite food is {self.favorite_food}.")
 
-    def menu(self):
+    def choose_action(self):
         while True:
             print("\n--- Ashley Menu ---")
             print("1. Greet")
@@ -35,8 +37,8 @@ class Gomez:
                 "1": self.greet,
                 "2": self.display_age,
                 "3": self.display_course,
-                "4": self.hobby,
-                "5": self.favorite_food,
+                "4": self.share_hobby,  
+                "5": self.share_favorite_food, 
             }
 
             if choice in options:

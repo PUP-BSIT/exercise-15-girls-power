@@ -1,7 +1,7 @@
 from girls_power.gomez import Gomez
 from girls_power.mosenos import Mosenos
 
-ashley = Gomez()
+ashley = Gomez(name={}, age={}, course={})
 mosenos = Mosenos(title={}, author={}, genre={})
 
 def main_menu():
@@ -30,7 +30,7 @@ def main_menu():
             # TODO(esparagoza_mikka):
 
         elif choice == '4':
-            ashley.menu()
+            ashley.choose_action()
            
         elif choice == '5':
             mosenos.menu()
