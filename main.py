@@ -1,8 +1,10 @@
 from girls_power.gomez import Gomez
 from girls_power.mosenos import Mosenos
+from girls_power.esparagoza import Esparagoza
 
 ashley = Gomez(name={}, age={}, course={})
 mosenos = Mosenos(title={}, author={}, genre={})
+esparagoza = Esparagoza()
 
 def main_menu():
     while True:
@@ -26,14 +28,14 @@ def main_menu():
             # TODO(de_leon_jasmine):
             
         elif choice == '3':
-            print("-----")
-            # TODO(esparagoza_mikka):
+            esparagoza.start_menu()
 
         elif choice == '4':
             ashley.choose_action()
            
         elif choice == '5':
             mosenos.menu()
+            
         elif choice == '6':
             print("\nExiting program.\n")  
             break
