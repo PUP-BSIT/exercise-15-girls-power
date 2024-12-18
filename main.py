@@ -27,7 +27,6 @@ def main_menu():
             alejandro.start_calculator()
 
         elif choice == '2':
-            print("-----")
             deleon.menu()
             
         elif choice == '3':

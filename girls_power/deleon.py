@@ -9,9 +9,11 @@ class Deleon:
         self.high_score = 0
 
     def __str__(self):
-        """Return a string representation of the GameStatsTracker object."""
-        return (f"GameStatsTracker for {self.player_name}:\n"
-                f"Wins: {self.wins}, Losses: {self.losses}, High Score: {self.high_score}")
+        return (
+            f"GameStatsTracker for {self.player_name}:\n"
+            f"Wins: {self.wins}, Losses: {self.losses}, "
+            f"High Score: {self.high_score}"
+        )
 
     def add_win(self):
         self.wins += 1
@@ -19,14 +21,19 @@ class Deleon:
 
     def add_loss(self):
         self.losses += 1
-        print(f"{self.player_name} suffered a loss. Total Losses: {self.losses}")
+        print(
+            f"{self.player_name} suffered a loss. Total Losses: {self.losses}"
+        )
 
     def update_high_score(self, score):
         if score > self.high_score:
             self.high_score = score
             print(f"New high score for {self.player_name}: {self.high_score}")
         else:
-            print(f"Score {score} did not beat the high score: {self.high_score}")
+            print(
+                f"Score {score} did not beat the high score: "
+                f"{self.high_score}"
+            )
 
     def reset_stats(self):
         self.wins = 0
@@ -52,7 +59,7 @@ class Deleon:
             print("4. Reset Stats")
             print("5. Display Stats")
             print("6. Exit")
-            
+
             choice = input("Enter your choice (1-6): ").strip()
 
             if choice == "1":
@@ -71,12 +78,15 @@ class Deleon:
                 self.display_stats()
                 input("\nPress Enter to return to the menu.")
             elif choice == "6":
-                confirm = input("Are you sure you want to exit? (y/n): ").strip().lower()
+                confirm = input(
+                    "Are you sure you want to exit? (y/n): "
+                ).strip().lower()
                 if confirm == 'y':
                     print("Exiting the menu. Goodbye!")
                     break
             else:
-                print("Invalid choice. Please choose a number between 1 and 6.")
+                print("Invalid choice.")
+
 
 if __name__ == "__main__":
     tracker = Deleon(player_name="Jasmine")
